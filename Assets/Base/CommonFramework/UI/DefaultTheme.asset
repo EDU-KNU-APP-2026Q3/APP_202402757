@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f6e3447425dae24dad0dd11af75f329, type: 3}
   m_Name: DefaultTheme
   m_EditorClassIdentifier: Assembly-CSharp::UITheme
-  primaryFont: {fileID: 11400000, guid: 96f8b955fa4e61e4da119e55ecbef85a, type: 2}
-  headingFont: {fileID: 11400000, guid: 96f8b955fa4e61e4da119e55ecbef85a, type: 2}
-  accentColor: {r: 0.7075472, g: 0.39633024, b: 0.28368637, a: 1}
-  backgroundColor: {r: 1, g: 0.9159742, b: 0.48584908, a: 1}
-  textColor: {r: 0.9056604, g: 0.34230247, b: 0.15806337, a: 1}
-  buttonColor: {r: 0.4141153, g: 0.5855882, b: 0.8867924, a: 1}
+  primaryFont: {fileID: 11400000, guid: 1f2d84f6ae57a204fb15aa24c7607665, type: 2}
+  headingFont: {fileID: 11400000, guid: 1f2d84f6ae57a204fb15aa24c7607665, type: 2}
+  accentColor: {r: 0.9811321, g: 0.5229619, b: 0.6240686, a: 1}
+  backgroundColor: {r: 0.6886792, g: 0.068218224, b: 0.25006995, a: 1}
+  textColor: {r: 0.9622642, g: 0.32226774, b: 0.45870283, a: 1}
+  buttonColor: {r: 1, g: 0.9009434, b: 0.9009434, a: 1}
   cornerRadius: 8
