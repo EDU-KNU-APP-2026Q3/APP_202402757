@@ -6,17 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/W04_HW/W04.unity
-    guid: 52361009a4ca15940be98332068e2ee0
-  - enabled: 0
-    path: Assets/W06_HW/W06_HW.unity
-    guid: ff96ad01ee09c7c4ea626ad3ba10fc57
+    path: Assets/W08_HW/W08_MainMenu.unity
+    guid: 2a2ce1e00e3b11848aab643e9fc0da26
   - enabled: 1
-    path: Assets/Base/GenreCore/Survivor/GamePlay.unity
-    guid: b6928c63d6c384816b870c9e08235443
+    path: Assets/W08_HW/W08_HW.unity
+    guid: 4b9d928932acb164da7ca7dc9e47f844
   - enabled: 1
-    path: Assets/Base/GenreCore/Survivor/GameOver.unity
-    guid: 99556e9e6944f4d278004f08dfc7c9c0
+    path: Assets/W08_HW/W08_GameOver.unity
+    guid: ba919859ca6f42b4bb6e5cf50308dac0
+  - enabled: 1
+    path: Assets/Mid/Mid_MainMenu.unity
+    guid: d7cd9299a4e949f688abc48decad8253
+  - enabled: 1
+    path: Assets/Mid/Mid.unity
+    guid: 2f5e3129af5b4c69b018db9fd3728192
+  - enabled: 1
+    path: Assets/Mid/Mid_GameOver.unity
+    guid: c16e1da3a20c4973980b2ac635b378ec
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
