@@ -6,15 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/W08_HW/W08_MainMenu.unity
-    guid: 2a2ce1e00e3b11848aab643e9fc0da26
-  - enabled: 1
-    path: Assets/W08_HW/W08_HW.unity
-    guid: 4b9d928932acb164da7ca7dc9e47f844
-  - enabled: 1
-    path: Assets/W08_HW/W08_GameOver.unity
-    guid: ba919859ca6f42b4bb6e5cf50308dac0
-  - enabled: 1
     path: Assets/Mid/Mid_MainMenu.unity
     guid: d7cd9299a4e949f688abc48decad8253
   - enabled: 1
