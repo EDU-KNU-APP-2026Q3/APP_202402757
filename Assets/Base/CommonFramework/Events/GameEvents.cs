@@ -16,10 +16,14 @@ public static class GameEvents
     public static event Action OnPlayerDied;
     public static event Action OnNewHighScore;
     public static event Action OnSettingsChanged;
+    public static event Action OnEnemyDefeated;
+    public static event Action OnPlayerHit;
 
     // 게임 코어 스크립트에서 호출하는 발생 메서드
     public static void RaiseScoreChanged(int newScore) => OnScoreChanged?.Invoke(newScore);
     public static void RaisePlayerDied() => OnPlayerDied?.Invoke();
     public static void RaiseNewHighScore() => OnNewHighScore?.Invoke();
     public static void RaiseSettingsChanged() => OnSettingsChanged?.Invoke();
+    public static void RaiseEnemyDefeated() => OnEnemyDefeated?.Invoke();
+    public static void RaisePlayerHit() => OnPlayerHit?.Invoke();
 }

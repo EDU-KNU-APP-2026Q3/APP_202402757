@@ -13,7 +13,7 @@ using UnityEngine.TextCore.LowLevel;
 using UnityEngine.UI;
 using Object = UnityEngine.Object;
 
-public static class MidSceneSetup
+public static partial class MidSceneSetup
 {
     const string Root = "Assets/Mid";
     static UITheme theme;
@@ -268,13 +268,8 @@ public static class MidSceneSetup
         icon.preserveAspect = true; icon.raycastTarget = false; At(icon.rectTransform, 0, 120, 230, 230);
         if (gameOver)
         {
-            actions.roundScoreText = Label("Round Score", card.transform, "이번 점수  0", 44);
+            actions.roundScoreText = Label("Round Score", card.transform, "0", 44);
             At(actions.roundScoreText.rectTransform, 0, -55, 800, 85);
-        }
-        else
-        {
-            var hint = Label("Controls", card.transform, "방향키 / WASD   자동 공격", 30);
-            At(hint.rectTransform, 0, -55, 820, 85);
         }
         var play = Button("Play", card.transform, gameOver ? "다시 하기" : "시작하기");
         At((RectTransform)play.transform, 0, -220, 720, 120);

@@ -91,7 +91,7 @@ public class MidVerification : MonoBehaviour
         ClearTestScores();
         yield return ReloadScores();
         var ui = Board(); ui.Open();
-        Check(ui.statusText.text == "아직 기록이 없습니다" && ui.rankTexts.All(t => t.text == "-"), "empty record message and three dashes");
+        Check(ui.statusText.text == "아직 기록이 없어요" && ui.rankTexts.All(t => t.text == "-"), "empty record message and three dashes");
         var scores = ScoreManager.Instance;
         scores.ResetCurrentScore(); scores.FinalizeRound(); scores.FinalizeRound(); ui.Refresh();
         Check(scores.TopScores.Count == 1 && ui.rankTexts[0].text == "0" && ui.highScoreText.text == "0", "zero points is a valid record; duplicate finalize ignored");
@@ -119,7 +119,7 @@ public class MidVerification : MonoBehaviour
         ClearTestScores();
         yield return ReloadScores();
         ui = Board(); ui.Open();
-        Check(ui.statusText.text == "아직 기록이 없습니다" && ui.rankTexts.All(t => t.text == "-"), "no-record state after reload");
+        Check(ui.statusText.text == "아직 기록이 없어요" && ui.rankTexts.All(t => t.text == "-"), "no-record state after reload");
         yield return Capture(ui, 1080, 1920, "04_empty_records.png");
         ui.Close();
         FindObjectsByType<Button>(FindObjectsSortMode.None).Single(b => b.name == "Play").onClick.Invoke();

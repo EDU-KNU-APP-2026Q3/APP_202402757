@@ -22,7 +22,9 @@ public class PlayerHealth : MonoBehaviour
     {
         if (_isDead) return; // 예외 케이스 방지
 
+        int previousHealth = CurrentHealth;
         CurrentHealth = Mathf.Max(0, CurrentHealth - amount);
+        if (CurrentHealth < previousHealth) GameEvents.RaisePlayerHit();
 
         if (CurrentHealth <= 0)
         {

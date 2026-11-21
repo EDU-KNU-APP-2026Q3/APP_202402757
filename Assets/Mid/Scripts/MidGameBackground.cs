@@ -6,6 +6,8 @@ using UnityEngine;
 public class MidGameBackground : MonoBehaviour
 {
     public Camera targetCamera;
+    [Range(0f, 1f)] public float verticalFocus = .5f;
+
     void OnEnable() => Apply();
     void LateUpdate() => Apply();
     public void Apply()
@@ -22,7 +24,8 @@ public class MidGameBackground : MonoBehaviour
         float scale = Mathf.Max(width / spriteSize.x, height / spriteSize.y);
         transform.localScale = new Vector3(scale, scale, 1f);
         Vector3 spriteCenter = renderer.sprite.bounds.center;
+        float verticalOffset = (height - spriteSize.y * scale) * (verticalFocus - .5f);
         transform.position = new Vector3(camera.transform.position.x - spriteCenter.x * scale,
-            camera.transform.position.y - spriteCenter.y * scale, transform.position.z);
+            camera.transform.position.y - spriteCenter.y * scale + verticalOffset, transform.position.z);
     }
 }

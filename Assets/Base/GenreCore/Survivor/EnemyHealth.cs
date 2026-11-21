@@ -25,6 +25,7 @@ public class EnemyHealth : MonoBehaviour
         if (_currentHealth <= 0)
         {
             _isDead = true;
+            GameEvents.RaiseEnemyDefeated();
             if (ScoreManager.Instance != null) ScoreManager.Instance.AddScore(scoreValue);
             Destroy(gameObject);
         }

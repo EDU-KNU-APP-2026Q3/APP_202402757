@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UITheme
   primaryFont: {fileID: 11400000, guid: 55e928c9ffd44159a5acb1e73b7a57e3, type: 2}
   headingFont: {fileID: 11400000, guid: 55e928c9ffd44159a5acb1e73b7a57e3, type: 2}
-  accentColor: {r: 0.9843137, g: 0.8352941, b: 0.9019608, a: 1}
-  backgroundColor: {r: 0.972549, g: 0.95686275, b: 0.9882353, a: 1}
-  textColor: {r: 0.2509804, g: 0.18431373, b: 0.3372549, a: 1}
-  buttonColor: {r: 0.9843137, g: 0.8352941, b: 0.9019608, a: 1}
+  accentColor: {r: 0.7607843, g: 0.8156863, b: 1, a: 1}
+  backgroundColor: {r: 1, g: 0.9843137, b: 1, a: 1}
+  textColor: {r: 0.25882354, g: 0.18431373, b: 0.34901962, a: 1}
+  buttonColor: {r: 1, g: 0.7882353, b: 0.89411765, a: 1}
   cornerRadius: 8

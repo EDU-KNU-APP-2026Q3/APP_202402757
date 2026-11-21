@@ -6,6 +6,7 @@ public class MidScoreBoardUI : MonoBehaviour
     public TMP_Text highScoreText;
     public TMP_Text statusText;
     public TMP_Text[] rankTexts;
+    public GameObject returnMenu;
 
     void OnEnable() => Refresh();
 
@@ -18,7 +19,7 @@ public class MidScoreBoardUI : MonoBehaviour
         bool hasRecords = scores != null && scores.TopScores.Count > 0;
         // A completed round with zero points is a record, not an empty slot.
         highScoreText.text = hasRecords ? scores.HighScore.ToString("N0") : "-";
-        statusText.text = hasRecords ? "다음 도전에서 기록을 높여 보세요!" : "아직 기록이 없습니다";
+        statusText.text = hasRecords ? "다음 도전에서 기록을 높여 보세요!" : "아직 기록이 없어요";
         for (int i = 0; i < rankTexts.Length; i++)
         {
             rankTexts[i].enableAutoSizing = true;
@@ -28,6 +29,15 @@ public class MidScoreBoardUI : MonoBehaviour
         }
     }
 
-    public void Open() => gameObject.SetActive(true);
-    public void Close() => gameObject.SetActive(false);
+    public void Open()
+    {
+        gameObject.SetActive(true);
+        if (returnMenu != null) returnMenu.SetActive(false);
+    }
+
+    public void Close()
+    {
+        if (returnMenu != null) returnMenu.SetActive(true);
+        gameObject.SetActive(false);
+    }
 }

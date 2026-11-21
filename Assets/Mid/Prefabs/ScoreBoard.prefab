@@ -169,7 +169,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3756368856197901219
 RectTransform:
   m_ObjectHideFlags: 0
@@ -262,8 +262,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -80}
-  m_SizeDelta: {x: 700, y: 80}
+  m_AnchoredPosition: {x: 0, y: -41}
+  m_SizeDelta: {x: 720, y: 58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7689330103111672468
 CanvasRenderer:
@@ -591,7 +591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MidRoundedImage
   m_Material: {fileID: 0}
-  m_Color: {r: 0.972549, g: 0.95686275, b: 0.9882353, a: 1}
+  m_Color: {r: 0.94509804, g: 0.9098039, b: 0.99607843, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -610,6 +610,8 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 1
   capsule: 0
   cornerRadius: 32
+  appearance: 2
+  titleBar: {r: 0.7607843, g: 0.8156863, b: 1, a: 1}
 --- !u!1 &2102891509371040459
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,7 +678,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC544\uC9C1 \uAE30\uB85D\uC774 \uC5C6\uC2B5\uB2C8\uB2E4"
+  m_text: "\uC544\uC9C1 \uAE30\uB85D\uC774 \uC5C6\uC5B4\uC694"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 55e928c9ffd44159a5acb1e73b7a57e3, type: 2}
   m_sharedMaterial: {fileID: -448659035383569442, guid: 55e928c9ffd44159a5acb1e73b7a57e3, type: 2}
@@ -951,6 +953,73 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ThemedText
   theme: {fileID: 11400000, guid: c5328a2c70574d93a350bc27ce872066, type: 2}
   isHeading: 1
+--- !u!1 &2926382191491919406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 738559653032198075}
+  - component: {fileID: 2914803668146469760}
+  - component: {fileID: 7298309439941958937}
+  m_Layer: 0
+  m_Name: Pastel Grid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &738559653032198075
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2926382191491919406}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2734871034371065469}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2914803668146469760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2926382191491919406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc1dfd66659d77d46b52e19321d9c536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MidRetroWallpaper
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  inset: 0
+  results: 0
+--- !u!222 &7298309439941958937
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2926382191491919406}
+  m_CullTransparentMesh: 1
 --- !u!1 &3543668711786263697
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,7 +1081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MidRoundedImage
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.9843137, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1031,6 +1100,8 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 1
   capsule: 0
   cornerRadius: 32
+  appearance: 1
+  titleBar: {r: 0.7607843, g: 0.8156863, b: 1, a: 1}
 --- !u!1 &3664126875179376119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,6 +1111,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3262611911257009079}
+  - component: {fileID: 6344020979045586794}
+  - component: {fileID: 6111399428105437255}
   m_Layer: 0
   m_Name: Heading
   m_TagString: Untagged
@@ -1068,6 +1141,48 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6344020979045586794
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3664126875179376119}
+  m_CullTransparentMesh: 1
+--- !u!114 &6111399428105437255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3664126875179376119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5539b02eeecb4aa08a30b671526611ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MidRoundedImage
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.9843137, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+  capsule: 0
+  cornerRadius: 32
+  appearance: 2
+  titleBar: {r: 0.7607843, g: 0.8156863, b: 1, a: 1}
 --- !u!1 &3693643628728557750
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,7 +1548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MidRoundedImage
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9843137, g: 0.8784314, b: 0.9254902, a: 1}
+  m_Color: {r: 1, g: 0.92941177, b: 0.96862745, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1452,6 +1567,8 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 1
   capsule: 0
   cornerRadius: 32
+  appearance: 1
+  titleBar: {r: 1, g: 0.7882353, b: 0.89411765, a: 1}
 --- !u!1 &4055795035450887823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,7 +1586,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1913003535239845183
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1560,10 +1677,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 8316631847046418041}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.78}
-  m_AnchorMax: {x: 0.5, y: 0.78}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 600, y: 70}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -41}
+  m_SizeDelta: {x: 720, y: 58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &814094565262037951
 CanvasRenderer:
@@ -1808,7 +1925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MidRoundedImage
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.94509804, b: 0.96862745, a: 1}
+  m_Color: {r: 1, g: 0.89411765, b: 0.9490196, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1827,6 +1944,8 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 1
   capsule: 0
   cornerRadius: 32
+  appearance: 2
+  titleBar: {r: 0.7607843, g: 0.8156863, b: 1, a: 1}
 --- !u!1 &5058973536588792800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2732,6 +2851,8 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 1
   capsule: 1
   cornerRadius: 32
+  appearance: 4
+  titleBar: {r: 0.78039217, g: 0.93333334, b: 0.8901961, a: 1}
 --- !u!114 &3586265151552336551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2861,7 +2982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MidRoundedImage
   m_Material: {fileID: 0}
-  m_Color: {r: 0.972549, g: 0.95686275, b: 0.9882353, a: 1}
+  m_Color: {r: 0.94509804, g: 0.9098039, b: 0.99607843, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2880,6 +3001,8 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 1
   capsule: 0
   cornerRadius: 32
+  appearance: 2
+  titleBar: {r: 0.7607843, g: 0.8156863, b: 1, a: 1}
 --- !u!1 &7612138544393916943
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,6 +3184,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 738559653032198075}
   - {fileID: 3756368856197901219}
   - {fileID: 1913003535239845183}
   - {fileID: 4603541300183916330}
@@ -3089,6 +3213,7 @@ MonoBehaviour:
   - {fileID: 4439538247540764448}
   - {fileID: 2207192021051589322}
   - {fileID: 9213794203057769836}
+  returnMenu: {fileID: 0}
 --- !u!1 &8860239458356851010
 GameObject:
   m_ObjectHideFlags: 0

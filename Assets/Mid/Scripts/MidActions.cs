@@ -8,7 +8,7 @@ public class MidActions : MonoBehaviour
     void Start()
     {
         if (roundScoreText != null && ScoreManager.Instance != null)
-            roundScoreText.text = "이번 점수  " + ScoreManager.Instance.CurrentScore.ToString("N0");
+            roundScoreText.text = ScoreManager.Instance.CurrentScore.ToString("N0");
     }
 
     public void StartGame() => GameManager.Instance.RestartGame();
